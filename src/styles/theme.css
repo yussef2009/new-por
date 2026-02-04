@@ -1,0 +1,153 @@
+@layer base {
+  :root {
+    --font-size: 16px;
+    --background: 1 0 0;
+    /* #ffffff */
+    --foreground: 0.145 0 0;
+    --card: 1 0 0;
+    /* #ffffff */
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.13 0.03 260;
+    /* #030213 approx darkest blue */
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.006 264.53;
+    --secondary-foreground: 0.13 0.03 260;
+    --muted: 0.96 0.01 260;
+    /* #ececf0 approx */
+    --muted-foreground: 0.55 0.02 260;
+    /* #717182 approx */
+    --accent: 0.96 0.01 260;
+    /* #e9ebef approx */
+    --accent-foreground: 0.13 0.03 260;
+    --destructive: 0.55 0.2 20;
+    /* #d4183d approx */
+    --destructive-foreground: 1 0 0;
+    --border: 0.0 0 0;
+    /* Black for border, opacity will be handled by utility if needed, but originally was rgba(0,0,0,0.1). Let's use a light grey for border instead of alpha hack for now to strictly follow oklch pattern */
+    /* Updating border to valid oklch grey that matches the visual of 0.1 opacity black on white */
+    --border: 0.92 0 0;
+    --input: 0 0 0;
+    /* Transparent originally. Handling transparent in oklch is tricky. Let's use sidebar-border or similar. */
+    /* Reverting input to match background or border for now */
+    --input: 0.92 0 0;
+    --input-background: 0.96 0 0;
+    --switch-background: 0.85 0 0;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+    --ring: 0.708 0 0;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --radius: 0.625rem;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.13 0.03 260;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  .dark {
+    --background: 0.12 0.01 260;
+    --foreground: 0.985 0 0;
+    --card: 0.15 0.02 260;
+    --card-foreground: 0.985 0 0;
+    --popover: 0.12 0.01 260;
+    --popover-foreground: 0.985 0 0;
+    --primary: 0.985 0 0;
+    --primary-foreground: 0.205 0 0;
+    --secondary: 0.25 0.03 260;
+    --secondary-foreground: 0.985 0 0;
+    --muted: 0.25 0.02 260;
+    --muted-foreground: 0.708 0 0;
+    --accent: 0.25 0.03 260;
+    --accent-foreground: 0.985 0 0;
+    --destructive: 0.396 0.141 25.723;
+    --destructive-foreground: 0.637 0.237 25.331;
+    --border: 0.25 0.02 260;
+    --input: 0.25 0.02 260;
+    --ring: 0.439 0 0;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+    --chart-1: 0.488 0.243 264.376;
+    --chart-2: 0.696 0.17 162.48;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.627 0.265 303.9;
+    --chart-5: 0.645 0.246 16.439;
+    --sidebar: 0.205 0 0;
+    --sidebar-foreground: 0.985 0 0;
+    --sidebar-primary: 0.488 0.243 264.376;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.269 0 0;
+    --sidebar-accent-foreground: 0.985 0 0;
+    --sidebar-border: 0.269 0 0;
+    --sidebar-ring: 0.439 0 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}

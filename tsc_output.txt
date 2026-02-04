@@ -1,0 +1,30 @@
+src/components/PersonalDashboard.tsx(50,11): error TS6133: 'notifications' is declared but its value is never read.
+src/components/theme-toggle.tsx(2,24): error TS2307: Cannot find module '@/app/components/ui/button' or its corresponding type declarations.
+src/components/theme-toggle.tsx(3,26): error TS2307: Cannot find module '@/app/components/theme-provider' or its corresponding type declarations.
+src/components/ui/calendar.tsx(63,9): error TS2353: Object literal may only specify known properties, and 'IconLeft' does not exist in type 'Partial<CustomComponents>'.
+src/components/ui/calendar.tsx(63,22): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/components/ui/calendar.tsx(66,23): error TS7031: Binding element 'className' implicitly has an 'any' type.
+src/components/ui/chart.tsx(109,3): error TS2339: Property 'payload' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; allowEscapeViewBox?: AllowInDimension | undefined; ... 24 more ...; wrapperStyle?: CSSProperties | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/components/ui/chart.tsx(114,3): error TS2339: Property 'label' does not exist on type 'Omit<Props<ValueType, NameType>, PropertiesReadFromContext> & { active?: boolean | undefined; allowEscapeViewBox?: AllowInDimension | undefined; ... 24 more ...; wrapperStyle?: CSSProperties | undefined; } & ClassAttributes<...> & HTMLAttributes<...> & { ...; }'.
+src/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/components/ui/chart.tsx(260,39): error TS2344: Type '"verticalAlign" | "payload"' does not satisfy the constraint '"string" | "children" | "filter" | "fill" | "values" | "role" | "id" | "name" | "type" | "result" | "color" | "u1" | "u2" | "slot" | "style" | "clipPath" | "mask" | "path" | "className" | ... 430 more ... | "portal"'.
+  Type '"payload"' is not assignable to type '"string" | "children" | "filter" | "fill" | "values" | "role" | "id" | "name" | "type" | "result" | "color" | "u1" | "u2" | "slot" | "style" | "clipPath" | "mask" | "path" | "className" | ... 430 more ... | "portal"'.
+src/components/ui/chart.tsx(266,17): error TS2339: Property 'length' does not exist on type '{}'.
+src/components/ui/chart.tsx(278,16): error TS2339: Property 'map' does not exist on type '{}'.
+src/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/components/ui/resizable.tsx(12,51): error TS2339: Property 'PanelGroup' does not exist on type 'typeof import("C:/Users/yusse/OneDrive/Desktop/edu/merged-app/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(14,25): error TS2339: Property 'PanelGroup' does not exist on type 'typeof import("C:/Users/yusse/OneDrive/Desktop/edu/merged-app/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(35,51): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("C:/Users/yusse/OneDrive/Desktop/edu/merged-app/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(39,25): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("C:/Users/yusse/OneDrive/Desktop/edu/merged-app/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/resizable.tsx(52,26): error TS2339: Property 'PanelResizeHandle' does not exist on type 'typeof import("C:/Users/yusse/OneDrive/Desktop/edu/merged-app/node_modules/react-resizable-panels/dist/react-resizable-panels")'.
+src/components/ui/sidebar.tsx(5,10): error TS1484: 'VariantProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/ui/sonner.tsx(4,29): error TS1484: 'ToasterProps' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/context/AppContext.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/context/AppContext.tsx(1,65): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/context/AuthContext.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/context/AuthContext.tsx(1,54): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/context/TeamContext.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/context/TeamContext.tsx(1,54): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/context/TeamContext.tsx(62,18): error TS6133: 'setTeam' is declared but its value is never read.
+src/pages/Login.tsx(4,1): error TS6133: 'motion' is declared but its value is never read.
