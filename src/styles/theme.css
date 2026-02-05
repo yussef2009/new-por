@@ -93,11 +93,16 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    /* Use CSS variables directly instead of Tailwind utilities here
+       to avoid build-time errors about unknown utilities. */
+    border-color: oklch(var(--border) / 0.2);
+    outline-color: oklch(var(--ring) / 0.5);
   }
 
   body {
-    @apply bg-background text-foreground;
+    /* Use design tokens directly instead of Tailwind utilities here. */
+    background-color: oklch(var(--background) / 1);
+    color: oklch(var(--foreground) / 1);
   }
 
   /**

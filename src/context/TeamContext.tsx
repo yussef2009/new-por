@@ -59,7 +59,7 @@ export const TeamProvider = ({ children }: TeamProviderProps) => {
     const { user } = useAuth();
 
     // Mock Team Data
-    const [team, setTeam] = useState<Team>({
+    const [team] = useState<Team>({
         id: 'team-001',
         name: 'The Innovators',
         projectTitle: 'Eco-Friendly Water Purification',
